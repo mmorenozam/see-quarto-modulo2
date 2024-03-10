@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "index.html#introducción",
+    "href": "index.html#introducción",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Introducción",
+    "text": "Introducción\n\n\nUna gran ventaja de usar R a través de RStudio es la creación de proyectos.\nEl uso de proyectos de R (o proyectos de RStudio para ser más precisos) ofrece una manera directa de dividir nuestro trabajo en directorios de trabajo, espacios de trabajo y documentos fuente.\nPero, ¿cuáles son exactamente las ventajas?\nEn resumen, yo considero que las ventajas son: mayor organización, facilidad de compartir códigos y reproducibilidad de los mismos."
+  },
+  {
+    "objectID": "index.html#introducción-1",
+    "href": "index.html#introducción-1",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Introducción",
+    "text": "Introducción\n\n\nLa manera de trabajar en R (cuando eres principiante) se podría resumir a:\n\nCrear manualmente un directorio donde poner nuestra base de datos (csv, excel, etc)\nAbrir R, crear un script nuevo, salvarlo en el directorio que creamos anteriormente\nComúnmente, establecer el directorio de trabajo mediante el comando setwd\nCorrer nuestro script, corregir errores, y obtener un resultado"
+  },
+  {
+    "objectID": "index.html#introducción-2",
+    "href": "index.html#introducción-2",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Introducción",
+    "text": "Introducción\n\n\nEste procedimiento, aunque bastante simple, es útil mayoritariamente cuando:\n\nNo cambias la ubicación de tu directorio (si cambias de computadora por ejemplo, tienes que adecuar setwd)\nNo tienes pensado compartir tu código con alguien más\nNo tienes muchas bases de datos con las que trabajar al mismo tiempo\nNo generas muchos outputs\nNo tienes más que unos dos que tres scripts para el mismo trabajo\n\nEstos problemas son bastante comunes si no conoces acerca de los proyectos de RStudio."
+  },
+  {
+    "objectID": "index.html#introducción-3",
+    "href": "index.html#introducción-3",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Introducción",
+    "text": "Introducción\n\n\nAparte de las reglas de dar nombres a variables y espaciados que ya nombramos en el módulo 1 de este curso, aquí haré repaso de varios consejos que me han ayudado en los años que llevo programando.\nEsto no quiere decir que deje de dar consejos de programación a lo largo del resto del curso.\nTampoco los consejos que aquí menciono representan una basta fuente de información.\nCada persona desarrolla su propio estilo de programación y eso está muy bien, solo hay que tener en cuenta que al momento de hacerlo, nuestros códigos sean lo suficientemente claros para que nosotros mismos los entendamos en el futuro."
+  },
+  {
+    "objectID": "index.html#creando-un-proyecto",
+    "href": "index.html#creando-un-proyecto",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Creando un proyecto",
+    "text": "Creando un proyecto\n\n\n\n\n\n\n\n\n\nClick en File (Archivo)\nClick en New Project… (Nuevo proyecto…)"
+  },
+  {
+    "objectID": "index.html#introducción-4",
+    "href": "index.html#introducción-4",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Introducción",
+    "text": "Introducción\n\n3.    No tienes pensado compartir tu código con alguien más\n\n4.    No tienes muchas bases de datos con las que trabajar al mismo tiempo\n\n5.    No generas muchos outputs\n\n6.    No tienes más que unos dos que tres scripts para el mismo trabajo"
+  },
+  {
+    "objectID": "index.html#creando-un-proyecto-1",
+    "href": "index.html#creando-un-proyecto-1",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Creando un proyecto",
+    "text": "Creando un proyecto\n\n\n\n\n\n\n\n\n\nClick en File (Archivo)\nClick en New Project… (Nuevo proyecto…)\nClick en New Directory (Nuevo Directorio)"
+  },
+  {
+    "objectID": "index.html#creando-un-proyecto-2",
+    "href": "index.html#creando-un-proyecto-2",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Creando un proyecto",
+    "text": "Creando un proyecto\n\n\n\n\n\n\n\n\n\nClick en File (Archivo)\nClick en New Project… (Nuevo proyecto…)\nClick en New Directory (Nuevo directorio)\nClick en New Project (Nuevo proyecto)"
+  },
+  {
+    "objectID": "index.html#creando-un-proyecto-3",
+    "href": "index.html#creando-un-proyecto-3",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Creando un proyecto",
+    "text": "Creando un proyecto\n\n\n\n\n\n\n\n\n\nClick en File (Archivo)\nClick en New Project… (Nuevo proyecto…)\nClick en New Directory (Nuevo directorio)\nClick en New Project (Nuevo proyecto)\nEscoger la ubicación donde crearemos el nuevo proyecto y el nombre del directorio. Asegúrate de que la opción de crear un repositorio git esté marcada."
+  },
+  {
+    "objectID": "index.html#creando-un-proyecto-4",
+    "href": "index.html#creando-un-proyecto-4",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Creando un proyecto",
+    "text": "Creando un proyecto"
+  },
+  {
+    "objectID": "index.html#creando-un-proyecto-5",
+    "href": "index.html#creando-un-proyecto-5",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Creando un proyecto",
+    "text": "Creando un proyecto\n\n\n\n\n\n\n\n\n\nEn la pestaña de Files (Archivos) es donde podremos poner en práctica la organización de nuestro proyecto.\nPara ello, nos tomaremos unos minutos en una demostración de las ventajas del uso de proyectos ante la forma “normal” de trabajar en R."
+  },
+  {
+    "objectID": "index.html#cómo-podemos-evitar-esto",
+    "href": "index.html#cómo-podemos-evitar-esto",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "¿Cómo podemos evitar esto?",
+    "text": "¿Cómo podemos evitar esto?"
+  },
+  {
+    "objectID": "index.html#organiza-tu-directorio-de-trabajo",
+    "href": "index.html#organiza-tu-directorio-de-trabajo",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Organiza tu directorio de trabajo",
+    "text": "Organiza tu directorio de trabajo\n\n\nEl mejor punto de comienzo es tener organizados tus directorios de trabajo.\nComo muchos de los consejos que enunciaré, este responde mucho a tus necesidades y preferencias personales.\nEl trabajar por proyectos en RStudio es una manera versátil y fácil de ayudarte con esa organización."
+  },
+  {
+    "objectID": "index.html#nombrando-objetos-y-funciones",
+    "href": "index.html#nombrando-objetos-y-funciones",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Nombrando objetos y funciones",
+    "text": "Nombrando objetos y funciones\n\n\nAparte de los errores que pueden provocarse por nombrar mal objetos que ya vimos, una buena práctica es el dar nombres con significados congruentes a tus objetos en R.\nSi trabajas con una sola tabla de datos a la vez, no importa mucho el nombre que le des a esta, pues sabes que es la única tabla en tu ambiente de trabajo.\nEn cambio, si trabajas con múltiples tablas de datos, te aconsejo evitar nombres genéricos como tabla1, table2, datos_final etc.\nEs mejor usar una estructura que: compartan un prefijo y una parte en la que se diferencien por una descripción.\nEjemplo, supongamos que analizas varias tablas de ingresos y egresos por año y mes de una empresa. Una buena opción sería nombrarlas como:\n\n\n\n\ningresos_mrzo_2023\ningresos_abrl_2023\ningresos_mayo_2023\ningresos_juni_2023\n\n\n\n\nNota como en este ejemplo, también hemos dejado letras afuera del nombre del mes. Esto ayuda a hacer cambios de manera más rápida con atajos de teclas."
+  },
+  {
+    "objectID": "index.html#nombrando-objetos-y-funciones-1",
+    "href": "index.html#nombrando-objetos-y-funciones-1",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Nombrando objetos y funciones",
+    "text": "Nombrando objetos y funciones\n\nAunque no cubrimos el cómo crear funciones en R, en caso que llegues a hacerlo, es útil dar el nombre más descriptivo posible de lo que hace esa función.\n\n\n\nfuncion_filtrado_filas_vacias &lt;- function(){\n  \n}\n\n\n\n\nLos nombres de las funciones de paquetes de R son generalmente cortos. Esto es gracias a la documentación de ayuda que las acompaña. Para nosotros que no creamos librerías, es más conveniente el llevar a cabo este tipo de nombramiento de funciones."
+  },
+  {
+    "objectID": "index.html#código-limpio",
+    "href": "index.html#código-limpio",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Código limpio",
+    "text": "Código limpio\n\nUn código limpio es mucho mas sencillo de leer y revisar. No es lo mismo:\n\n\nranas$Pred&lt;-factor(ranas$Pred,levels=c(\"C\",\"NL\",\"L\"))\nbxplot&lt;-ggboxplot(ranas,x=\"Pred\",y=\"Age.FromEmergence\",color=\"Pred\")\nhsdvals&lt;-emmeans_test(log.Age.FromEmergence~Pred,\n                      data=ranas,p.adjust.method=\"mvt\")\nhsdvals&lt;-add_significance(hsdvals,p.col=\"p.adj\",output.col=\"p.adj.signif\",cutpoints=c(0,0.001,0.01,0.05,0.1,1),symbols=c(\"***\",\"**\",\"*\",\".\",\"ns\"))\nhsdvals&lt;-hsdvals%&gt;%add_xy_position(x=\"Pred\")\nbxplot+stat_pvalue_manual(hsdvals,y.position=c(120,130,140))\n\n\nQue:\n\n\nranas$Pred &lt;- factor(ranas$Pred, levels = c(\"C\", \"NL\", \"L\"))\n\nbxplot &lt;- ggboxplot(ranas,\n                    x = \"Pred\",\n                    y = \"Age.FromEmergence\",\n                    color = \"Pred\")\n\nhsdvals &lt;- emmeans_test(log.Age.FromEmergence ~ Pred,\n                        data = ranas,\n                        p.adjust.method = \"mvt\")\n\nhsdvals &lt;- add_significance(hsdvals, p.col = \"p.adj\",\n                            output.col = \"p.adj.signif\",\n                            cutpoints = c(0, 0.001, 0.01, 0.05, 0.1, 1),\n                            symbols = c(\"***\", \"**\", \"*\", \".\", \"ns\"))\n\nhsdvals &lt;- hsdvals %&gt;%\n  add_xy_position(x = \"Pred\")\n\nbxplot + stat_pvalue_manual(hsdvals, y.position = c(120, 130, 140))"
+  },
+  {
+    "objectID": "index.html#código-limpio-1",
+    "href": "index.html#código-limpio-1",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Código limpio",
+    "text": "Código limpio\n\n\nEn general:\n\nDeja espacios vacíos antes y despues de =, &lt;-, -, +, %&gt;% etc\nUn espacio vacío después de ,\nDa cortes de línea (enter) donde sea necesario para que las líneas de código no sean muy largas\nDeja un espacio vacío entre líneas o conjuntos de líneas que cumplen con una función específica."
+  },
+  {
+    "objectID": "index.html#comenta-tu-código",
+    "href": "index.html#comenta-tu-código",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Comenta tu código",
+    "text": "Comenta tu código\n\n\nTu yo del futuro, le agradecerá a tu yo del pasado por los comentarios que dejes en los scripts que realices.\nYa te habrás dado cuenta de que # es el operador para comentar.\nPuedes también crear secciones para navegar tu script usando una sintaxis como ### nombre de la sección ###"
+  },
+  {
+    "objectID": "index.html#guarda-la-información-de-tu-sesión-de-trabajo",
+    "href": "index.html#guarda-la-información-de-tu-sesión-de-trabajo",
+    "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
+    "section": "Guarda la información de tu sesión de trabajo",
+    "text": "Guarda la información de tu sesión de trabajo\n\n\nA lo largo del tiempo, las funciones de los paquetes pueden ser dadas de baja (o inclusive los paquetes pueden ser dados de baja).\nEsto es un problema sobre todo con código que lleva mucho tiempo sin ser usado.\nPara poder tener una mejor idea de como volver funcional de nuevo códigos viejos, es guardando la información de tu sesión de trabajo en un archivo de texto.\nDe esta manera, si en un par de años un script tuyo deja de funcionar, puedes regresar a la información de la sesión de los paquetes que usaste y así volver a instalar sus versiones correspondientes (esto último puede ser un poco complicado, pero al menos tienes una base para comenzar).\nPuedes fácilmente guardar la información de tu sesión si agregas al final de tu script la siguiente línea de código:\n\n\n\n\nwriteLines(capture.output(sessionInfo()), \"sessionInfo.txt\")"
+  }
+]

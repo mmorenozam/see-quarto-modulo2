@@ -1,0 +1,339 @@
+---
+title: "Módulo 2: Proyectos en R y buenas prácticas de programación"
+title-slide-attributes:
+  data-background-image: images/icon.png
+  data-background-size: contain
+  data-background-opacity: "0.2"
+author: 
+  - name: Mauricio Moreno, PhD
+logo: images/icon.png
+format: 
+  revealjs:
+    slide-number: true
+    width: 1366
+    preview-links: auto
+    touch: true
+    chalkboard:
+      theme: whiteboard
+      boardmarker-width: 4
+      buttons: false
+    revealjs-plugins:
+      - pointer
+editor: visual
+---
+
+# Proyectos en R
+
+## Introducción
+
+::: incremental
+
+-   Una gran ventaja de usar R a través de RStudio es la creación de proyectos.
+
+-   El uso de proyectos de R (o proyectos de RStudio para ser más precisos) ofrece una manera directa de dividir nuestro trabajo en directorios de trabajo, espacios de trabajo y documentos fuente.
+
+-   Pero, ¿cuáles son exactamente las ventajas?
+
+-   En resumen, yo considero que las ventajas son: mayor organización, facilidad de compartir códigos y reproducibilidad de los mismos.
+
+
+:::
+
+
+## Introducción {visibility="uncounted"}
+
+::: incremental
+
+-   La manera de trabajar en R (cuando eres principiante) se podría resumir a:
+
+    1.    Crear manualmente un directorio donde poner nuestra base de datos (csv, excel, etc)
+    
+    2.    Abrir R, crear un script nuevo, salvarlo en el directorio que creamos anteriormente
+    
+    3.    Comúnmente, establecer el directorio de trabajo mediante el comando `setwd`
+    
+    4.    Correr nuestro script, corregir errores, y obtener un resultado
+
+
+
+:::
+
+## Introducción {visibility="uncounted"}
+
+::: incremental
+
+-   Este procedimiento, aunque bastante simple, es útil mayoritariamente cuando:
+    
+    1.    No cambias la ubicación de tu directorio (si cambias de computadora por ejemplo, tienes que adecuar `setwd`)
+    
+    2.    No tienes pensado compartir tu código con alguien más
+    
+    3.    No tienes muchas bases de datos con las que trabajar al mismo tiempo
+    
+    4.    No generas muchos outputs
+    
+    5.    No tienes más que unos dos que tres scripts para el mismo trabajo
+
+-   Estos problemas son bastante comunes si no conoces acerca de los proyectos de RStudio.
+
+:::
+
+
+## Creando un proyecto {.smaller}
+
+::: columns
+::: {.column width="40%"}
+![](images/paso_1.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+1.    Click en *File* (Archivo)
+    
+2.    Click en *New Project...* (Nuevo proyecto...)
+:::
+:::
+
+
+## Creando un proyecto {visibility="uncounted" .smaller}
+
+::: columns
+::: {.column width="40%"}
+![](images/win1.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+1.    Click en *File* (Archivo)
+    
+2.    Click en *New Project...* (Nuevo proyecto...)
+
+3.    Click en *New Directory* (Nuevo Directorio)
+:::
+:::
+
+
+
+
+## Creando un proyecto {visibility="uncounted" .smaller}
+
+::: columns
+::: {.column width="40%"}
+![](images/win3.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+1.    Click en *File* (Archivo)
+    
+2.    Click en *New Project...* (Nuevo proyecto...)
+
+3.    Click en *New Directory* (Nuevo directorio)
+
+4.    Click en *New Project* (Nuevo proyecto)
+:::
+:::
+
+## Creando un proyecto {visibility="uncounted" .smaller}
+
+::: columns
+::: {.column width="40%"}
+![](images/win2.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+1.    Click en *File* (Archivo)
+    
+2.    Click en *New Project...* (Nuevo proyecto...)
+
+3.    Click en *New Directory* (Nuevo directorio)
+
+4.    Click en *New Project* (Nuevo proyecto)
+
+5.    Escoger la ubicación donde crearemos el nuevo proyecto y el nombre del directorio. Asegúrate de que la opción de crear un repositorio git esté marcada.
+:::
+:::
+
+## Creando un proyecto {visibility="uncounted" .smaller}
+
+![](images/win4.png){fig-align="center"}
+
+## Creando un proyecto {visibility="uncounted" .smaller}
+
+::: columns
+::: {.column width="40%"}
+![](images/win5.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+-   En la pestaña de *Files* (Archivos) es donde podremos poner en práctica la organización de nuestro proyecto.
+
+-   Para ello, nos tomaremos unos minutos en una demostración de las ventajas del uso de proyectos ante la forma "normal" de trabajar en R.
+:::
+:::
+
+# Buenas Prácticas de Programación
+
+## ¿Cómo podemos evitar esto?
+
+![](images/when.jpg){fig-align="center"}
+
+## Introducción
+
+::: incremental
+
+-   Aparte de las reglas de dar nombres a variables y espaciados que ya nombramos en el módulo 1 de este curso, aquí haré repaso de varios consejos que me han ayudado en los años que llevo programando.
+
+-   Esto no quiere decir que deje de dar consejos de programación a lo largo del resto del curso.
+
+-   Tampoco los consejos que aquí menciono representan una basta fuente de información.
+
+-   Cada persona desarrolla su propio estilo de programación y eso está muy bien, solo hay que tener en cuenta que al momento de hacerlo, nuestros códigos sean lo suficientemente claros para que nosotros mismos los entendamos en el futuro.
+
+:::
+
+## Organiza tu directorio de trabajo
+
+::: incremental
+
+-   El mejor punto de comienzo es tener organizados tus directorios de trabajo.
+
+-   Como muchos de los consejos que enunciaré, este responde mucho a tus necesidades y preferencias personales.
+
+-   El trabajar por proyectos en RStudio es una manera versátil y fácil de ayudarte con esa organización.
+
+:::
+
+## Nombrando objetos y funciones {.smaller}
+
+::: incremental
+
+-   Aparte de los errores que pueden provocarse por nombrar mal objetos que ya vimos, una buena práctica es el dar nombres con significados congruentes a tus objetos en R.
+
+-   Si trabajas con una sola tabla de datos a la vez, no importa mucho el nombre que le des a esta, pues sabes que es la única tabla en tu ambiente de trabajo.
+
+-   En cambio, si trabajas con múltiples tablas de datos, te aconsejo evitar nombres genéricos como `tabla1`, `table2`, `datos_final` etc.
+
+-   Es mejor usar una estructura que: compartan un prefijo y una parte en la que se diferencien por una descripción.
+
+-   Ejemplo, supongamos que analizas varias tablas de ingresos y egresos por año y mes de una empresa. Una buena opción sería nombrarlas como:
+
+:::
+
+. . .
+
+```{r, eval = F, echo = T}
+ingresos_mrzo_2023
+ingresos_abrl_2023
+ingresos_mayo_2023
+ingresos_juni_2023
+```
+
+. . .
+
+-   Nota como en este ejemplo, también hemos dejado letras afuera del nombre del mes. Esto ayuda a hacer cambios de manera más rápida con atajos de teclas.
+
+## Nombrando objetos y funciones {.smaller visibility="uncounted"}
+
+
+-   Aunque no cubrimos el cómo crear funciones en R, en caso que llegues a hacerlo, es útil dar el nombre más descriptivo posible de lo que hace esa función.
+
+. . .
+
+```{r, eval = F , echo = T}
+funcion_filtrado_filas_vacias <- function(){
+  
+}
+```
+
+. . .
+
+-   Los nombres de las funciones de paquetes de R son generalmente cortos. Esto es gracias a la documentación de ayuda que las acompaña. Para nosotros que no creamos librerías, es más conveniente el llevar a cabo este tipo de nombramiento de funciones.
+
+## Código limpio {.smaller .scrollable}
+
+-   Un código limpio es mucho mas sencillo de leer y revisar. No es lo mismo:
+
+```{r, eval = F , echo = T}
+ranas$Pred<-factor(ranas$Pred,levels=c("C","NL","L"))
+bxplot<-ggboxplot(ranas,x="Pred",y="Age.FromEmergence",color="Pred")
+hsdvals<-emmeans_test(log.Age.FromEmergence~Pred,
+                      data=ranas,p.adjust.method="mvt")
+hsdvals<-add_significance(hsdvals,p.col="p.adj",output.col="p.adj.signif",cutpoints=c(0,0.001,0.01,0.05,0.1,1),symbols=c("***","**","*",".","ns"))
+hsdvals<-hsdvals%>%add_xy_position(x="Pred")
+bxplot+stat_pvalue_manual(hsdvals,y.position=c(120,130,140))
+```
+
+-   Que:
+
+```{r, eval = F , echo = T}
+ranas$Pred <- factor(ranas$Pred, levels = c("C", "NL", "L"))
+
+bxplot <- ggboxplot(ranas,
+                    x = "Pred",
+                    y = "Age.FromEmergence",
+                    color = "Pred")
+
+hsdvals <- emmeans_test(log.Age.FromEmergence ~ Pred,
+                        data = ranas,
+                        p.adjust.method = "mvt")
+
+hsdvals <- add_significance(hsdvals, p.col = "p.adj",
+                            output.col = "p.adj.signif",
+                            cutpoints = c(0, 0.001, 0.01, 0.05, 0.1, 1),
+                            symbols = c("***", "**", "*", ".", "ns"))
+
+hsdvals <- hsdvals %>%
+  add_xy_position(x = "Pred")
+
+bxplot + stat_pvalue_manual(hsdvals, y.position = c(120, 130, 140))
+```
+
+## Código limpio {visibility="uncounted"}
+
+::: incremental
+
+-   En general:
+
+      -   Deja espacios vacíos antes y despues de `=`, `<-`, `-`, `+`, `%>%` etc
+      
+      -   Un espacio vacío después de `,`
+      
+      -   Da cortes de línea (enter) donde sea necesario para que las líneas de código no sean muy largas
+      
+      -   Deja un espacio vacío entre líneas o conjuntos de líneas que cumplen con una función específica.
+
+:::
+
+## Comenta tu código
+
+::: incremental
+
+-   Tu yo del futuro, le agradecerá a tu yo del pasado por los comentarios que dejes en los scripts que realices.
+
+-   Ya te habrás dado cuenta de que `#` es el operador para comentar.
+
+-   Puedes también crear secciones para navegar tu script usando una sintaxis como `### nombre de la sección ###`
+
+:::
+
+## Guarda la información de tu sesión de trabajo {.smaller}
+
+::: incremental
+
+-   A lo largo del tiempo, las funciones de los paquetes pueden ser dadas de baja (o inclusive los paquetes pueden ser dados de baja).
+
+-   Esto es un problema sobre todo con código que lleva mucho tiempo sin ser usado.
+
+-   Para poder tener una mejor idea de como volver funcional de nuevo códigos viejos, es guardando la información de tu sesión de trabajo en un archivo de texto.
+
+-   De esta manera, si en un par de años un script tuyo deja de funcionar, puedes regresar a la información de la sesión de los paquetes que usaste y así volver a instalar sus versiones correspondientes (esto último puede ser un poco complicado, pero al menos tienes una base para comenzar).
+
+-   Puedes fácilmente guardar la información de tu sesión si agregas al final de tu script la siguiente línea de código:
+:::
+
+. . .
+
+```{r}
+#| echo: true
+#| eval: false
+#| 
+writeLines(capture.output(sessionInfo()), "sessionInfo.txt")
+```
