@@ -123,7 +123,7 @@
     "href": "index.html#comenta-tu-código",
     "title": "Módulo 2: Proyectos en R y buenas prácticas de programación",
     "section": "Comenta tu código",
-    "text": "Comenta tu código\n\n\nTu yo del futuro, le agradecerá a tu yo del pasado por los comentarios que dejes en los scripts que realices.\nYa te habrás dado cuenta de que # es el operador para comentar.\nPuedes también crear secciones para navegar tu script usando una sintaxis como ### nombre de la sección ###"
+    "text": "Comenta tu código\n\n\nTu yo del futuro, le agradecerá a tu yo del pasado por los comentarios que dejes en los scripts que realices.\nYa te habrás dado cuenta de que # es el operador para comentar.\nPuedes también crear secciones para navegar tu script usando una sintaxis como #### nombre de la sección ####"
   },
   {
     "objectID": "index.html#guarda-la-información-de-tu-sesión-de-trabajo",

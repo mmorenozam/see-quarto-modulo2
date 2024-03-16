@@ -310,7 +310,7 @@ bxplot + stat_pvalue_manual(hsdvals, y.position = c(120, 130, 140))
 
 -   Ya te habrás dado cuenta de que `#` es el operador para comentar.
 
--   Puedes también crear secciones para navegar tu script usando una sintaxis como `### nombre de la sección ###`
+-   Puedes también crear secciones para navegar tu script usando una sintaxis como `#### nombre de la sección ####`
 
 :::
 
